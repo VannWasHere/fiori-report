@@ -13,6 +13,275 @@
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport">
+                <!-- List Report LineItem -->
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Material Name"/>
+                            <PropertyValue Property="Value" Path="MaterialName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="January (Million IDR)"/>
+                            <PropertyValue Property="Value" Path="January"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="February (Million IDR)"/>
+                            <PropertyValue Property="Value" Path="February"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="March (Million IDR)"/>
+                            <PropertyValue Property="Value" Path="March"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="April (Million IDR)"/>
+                            <PropertyValue Property="Value" Path="April"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="May (Million IDR)"/>
+                            <PropertyValue Property="Value" Path="May"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="June (Million IDR)"/>
+                            <PropertyValue Property="Value" Path="June"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="July (Million IDR)"/>
+                            <PropertyValue Property="Value" Path="July"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="August (Million IDR)"/>
+                            <PropertyValue Property="Value" Path="August"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="September (Million IDR)"/>
+                            <PropertyValue Property="Value" Path="September"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="October (Million IDR)"/>
+                            <PropertyValue Property="Value" Path="October"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="November (Million IDR)"/>
+                            <PropertyValue Property="Value" Path="November"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="December (Million IDR)"/>
+                            <PropertyValue Property="Value" Path="December"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Total (Million IDR)"/>
+                            <PropertyValue Property="Value" Path="Total"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+
+                <!-- Selection Fields for filtering -->
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>MaterialName</PropertyPath>
+                    </Collection>
+                </Annotation>
+
+                <!-- Header Info -->
+                <Annotation Term="UI.HeaderInfo">
+                    <Record Type="UI.HeaderInfoType">
+                        <PropertyValue Property="TypeName" String="Material Procurement Report"/>
+                        <PropertyValue Property="TypeNamePlural" String="Material Procurement Reports"/>
+                        <PropertyValue Property="Title">
+                            <Record Type="UI.DataField">
+                                <PropertyValue Property="Value" Path="MaterialName"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+
+                <!-- Identification for Object Page -->
+                <Annotation Term="UI.Identification">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Material Name"/>
+                            <PropertyValue Property="Value" Path="MaterialName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Total Procurement"/>
+                            <PropertyValue Property="Value" Path="Total"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+
+                <!-- Facets for Object Page -->
+                <Annotation Term="UI.Facets">
+                    <Collection>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="ID" String="GeneralInformation"/>
+                            <PropertyValue Property="Label" String="General Information"/>
+                            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#GeneralInformation"/>
+                        </Record>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="ID" String="MonthlyData"/>
+                            <PropertyValue Property="Label" String="Monthly Procurement Data"/>
+                            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#MonthlyData"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+
+                <!-- Field Groups for Object Page -->
+                <Annotation Term="UI.FieldGroup" Qualifier="GeneralInformation">
+                    <Record Type="UI.FieldGroupType">
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="Material Name"/>
+                                    <PropertyValue Property="Value" Path="MaterialName"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="Total Procurement"/>
+                                    <PropertyValue Property="Value" Path="Total"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+
+                <Annotation Term="UI.FieldGroup" Qualifier="MonthlyData">
+                    <Record Type="UI.FieldGroupType">
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="January"/>
+                                    <PropertyValue Property="Value" Path="January"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="February"/>
+                                    <PropertyValue Property="Value" Path="February"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="March"/>
+                                    <PropertyValue Property="Value" Path="March"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="April"/>
+                                    <PropertyValue Property="Value" Path="April"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="May"/>
+                                    <PropertyValue Property="Value" Path="May"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="June"/>
+                                    <PropertyValue Property="Value" Path="June"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="July"/>
+                                    <PropertyValue Property="Value" Path="July"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="August"/>
+                                    <PropertyValue Property="Value" Path="August"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="September"/>
+                                    <PropertyValue Property="Value" Path="September"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="October"/>
+                                    <PropertyValue Property="Value" Path="October"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="November"/>
+                                    <PropertyValue Property="Value" Path="November"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="December"/>
+                                    <PropertyValue Property="Value" Path="December"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+
+                <!-- Currency and Number Formatting -->
+                <Annotation Term="Common.Label" Qualifier="January" String="January (Million IDR)"/>
+                <Annotation Term="Common.Label" Qualifier="February" String="February (Million IDR)"/>
+                <Annotation Term="Common.Label" Qualifier="March" String="March (Million IDR)"/>
+                <Annotation Term="Common.Label" Qualifier="April" String="April (Million IDR)"/>
+                <Annotation Term="Common.Label" Qualifier="May" String="May (Million IDR)"/>
+                <Annotation Term="Common.Label" Qualifier="June" String="June (Million IDR)"/>
+                <Annotation Term="Common.Label" Qualifier="July" String="July (Million IDR)"/>
+                <Annotation Term="Common.Label" Qualifier="August" String="August (Million IDR)"/>
+                <Annotation Term="Common.Label" Qualifier="September" String="September (Million IDR)"/>
+                <Annotation Term="Common.Label" Qualifier="October" String="October (Million IDR)"/>
+                <Annotation Term="Common.Label" Qualifier="November" String="November (Million IDR)"/>
+                <Annotation Term="Common.Label" Qualifier="December" String="December (Million IDR)"/>
+                <Annotation Term="Common.Label" Qualifier="Total" String="Total (Million IDR)"/>
+            </Annotations>
+
+            <!-- Individual field formatting -->
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport/January">
+                <Annotation Term="Common.Label" String="January (Million IDR)"/>
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+            </Annotations>
+            
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport/February">
+                <Annotation Term="Common.Label" String="February (Million IDR)"/>
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+            </Annotations>
+            
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport/March">
+                <Annotation Term="Common.Label" String="March (Million IDR)"/>
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+            </Annotations>
+            
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport/April">
+                <Annotation Term="Common.Label" String="April (Million IDR)"/>
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+            </Annotations>
+            
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport/May">
+                <Annotation Term="Common.Label" String="May (Million IDR)"/>
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+            </Annotations>
+            
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport/June">
+                <Annotation Term="Common.Label" String="June (Million IDR)"/>
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+            </Annotations>
+            
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport/July">
+                <Annotation Term="Common.Label" String="July (Million IDR)"/>
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+            </Annotations>
+            
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport/August">
+                <Annotation Term="Common.Label" String="August (Million IDR)"/>
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+            </Annotations>
+            
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport/September">
+                <Annotation Term="Common.Label" String="September (Million IDR)"/>
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+            </Annotations>
+            
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport/October">
+                <Annotation Term="Common.Label" String="October (Million IDR)"/>
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+            </Annotations>
+            
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport/November">
+                <Annotation Term="Common.Label" String="November (Million IDR)"/>
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+            </Annotations>
+            
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport/December">
+                <Annotation Term="Common.Label" String="December (Million IDR)"/>
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+            </Annotations>
+            
+            <Annotations Target="Z03_MATERIALPROC_SRV.MaterialProcReport/Total">
+                <Annotation Term="Common.Label" String="Total (Million IDR)"/>
+                <Annotation Term="UI.HiddenFilter" Bool="true"/>
+            </Annotations>
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>

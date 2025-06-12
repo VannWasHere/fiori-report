@@ -126,11 +126,13 @@
                 "useDateRange": true
               }
             },
+            "initialLoad": "Enabled",
             "tableSettings": {
               "type": "ResponsiveTable"
             }
           }
         },
+        "controllerName": "nampespace.projectmaterialreport.controller.ListReportExt",
         "pages": {
           "ObjectPage|MaterialProcReports": {
             "entitySet": "MaterialProcReports",
