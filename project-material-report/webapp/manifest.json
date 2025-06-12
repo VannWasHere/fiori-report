@@ -119,20 +119,37 @@
           "list": true,
           "settings": {
             "condensedTableLayout": true,
-            "smartVariantManagement": true,
-            "enableTableFilterInPageVariant": true,
+            "smartVariantManagement": false,
+            "enableTableFilterInPageVariant": false,
+            "variantManagement": "None",
             "filterSettings": {
               "dateSettings": {
-                "useDateRange": true
+                "useDateRange": false
               }
             },
             "initialLoad": "Enabled",
+            "autoLoad": true,
+            "enableAutoBinding": true,
+            "dataLoadSettings": {
+              "loadDataOnAppLaunch": "always"
+            },
             "tableSettings": {
-              "type": "ResponsiveTable"
+              "type": "ResponsiveTable",
+              "dataLoadSettings": {
+                "loadDataOnAppLaunch": "always"
+              }
             }
           }
         },
-        "controllerName": "nampespace.projectmaterialreport.controller.ListReportExt",
+        "extends": {
+          "extensions": {
+            "sap.ui.controllerExtensions": {
+              "sap.suite.ui.generic.template.ListReport.view.ListReport": {
+                "controllerName": "nampespace.projectmaterialreport.controller.ListReportExt"
+              }
+            }
+          }
+        },
         "pages": {
           "ObjectPage|MaterialProcReports": {
             "entitySet": "MaterialProcReports",

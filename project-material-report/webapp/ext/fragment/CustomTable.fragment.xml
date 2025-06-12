@@ -1,0 +1,68 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+    <Table id="customMaterialTable">
+        <columns>
+            <Column>
+                <Text text="Material Name"/>
+            </Column>
+            <Column>
+                <Text text="January"/>
+            </Column>
+            <Column>
+                <Text text="February"/>
+            </Column>
+            <Column>
+                <Text text="March"/>
+            </Column>
+            <Column>
+                <Text text="April"/>
+            </Column>
+            <Column>
+                <Text text="May"/>
+            </Column>
+            <Column>
+                <Text text="June"/>
+            </Column>
+            <Column>
+                <Text text="July"/>
+            </Column>
+            <Column>
+                <Text text="August"/>
+            </Column>
+            <Column>
+                <Text text="September"/>
+            </Column>
+            <Column>
+                <Text text="October"/>
+            </Column>
+            <Column>
+                <Text text="November"/>
+            </Column>
+            <Column>
+                <Text text="December"/>
+            </Column>
+            <Column>
+                <Text text="Total"/>
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <Text text="{MaterialName}"/>
+                    <Text text="{path: 'January', formatter: '.formatCurrencyIDR'}"/>
+                    <Text text="{path: 'February', formatter: '.formatCurrencyIDR'}"/>
+                    <Text text="{path: 'March', formatter: '.formatCurrencyIDR'}"/>
+                    <Text text="{path: 'April', formatter: '.formatCurrencyIDR'}"/>
+                    <Text text="{path: 'May', formatter: '.formatCurrencyIDR'}"/>
+                    <Text text="{path: 'June', formatter: '.formatCurrencyIDR'}"/>
+                    <Text text="{path: 'July', formatter: '.formatCurrencyIDR'}"/>
+                    <Text text="{path: 'August', formatter: '.formatCurrencyIDR'}"/>
+                    <Text text="{path: 'September', formatter: '.formatCurrencyIDR'}"/>
+                    <Text text="{path: 'October', formatter: '.formatCurrencyIDR'}"/>
+                    <Text text="{path: 'November', formatter: '.formatCurrencyIDR'}"/>
+                    <Text text="{path: 'December', formatter: '.formatCurrencyIDR'}"/>
+                    <Text text="{path: 'Total', formatter: '.formatTotal'}"/>
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</core:FragmentDefinition> 

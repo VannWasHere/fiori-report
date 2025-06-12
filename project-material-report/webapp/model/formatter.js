@@ -3,29 +3,29 @@ sap.ui.define([], function () {
     
     return {
         /**
-         * Format numbers to Indonesian Rupiah in millions
-         * Converts scientific notation (e.g., 1.0025E2) to IDR millions format
+         * Format numbers to Indonesian Rupiah by multiplying by 100,000
+         * Converts scientific notation (e.g., 1.0025E2) to full IDR format
          * @param {number} value - The number value to format
          * @returns {string} - Formatted Indonesian Rupiah string
          */
         formatCurrencyIDR: function (value) {
             if (!value || value === 0) {
-                return "IDR 0 Jt";
+                return "IDR 0";
             }
             
             // Convert scientific notation to regular number
             let numericValue = parseFloat(value);
             
-            // Convert to millions (divide by 1,000,000)
-            let millions = numericValue / 1000000;
+            // Multiply by 100,000 as requested
+            let multipliedValue = numericValue * 100000;
             
             // Format with Indonesian locale
-            let formatted = millions.toLocaleString('id-ID', {
-                minimumFractionDigits: 2,
-                maximumFractionDigits: 2
+            let formatted = multipliedValue.toLocaleString('id-ID', {
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
             });
             
-            return `IDR ${formatted} Jt`;
+            return `IDR ${formatted}`;
         },
         
         /**
@@ -55,22 +55,22 @@ sap.ui.define([], function () {
          */
         formatTotal: function (value) {
             if (!value || value === 0) {
-                return "IDR 0 Jt";
+                return "IDR 0";
             }
             
             // Convert scientific notation to regular number
             let numericValue = parseFloat(value);
             
-            // Convert to millions
-            let millions = numericValue / 1000000;
+            // Multiply by 100,000 as requested
+            let multipliedValue = numericValue * 100000;
             
             // Format with Indonesian locale
-            let formatted = millions.toLocaleString('id-ID', {
-                minimumFractionDigits: 2,
-                maximumFractionDigits: 2
+            let formatted = multipliedValue.toLocaleString('id-ID', {
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
             });
             
-            return `IDR ${formatted} Jt`;
+            return `IDR ${formatted}`;
         },
         
         /**
