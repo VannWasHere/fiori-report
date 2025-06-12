@@ -4,6 +4,16 @@
 
 This is a **Final Test project for ERP Programming** using SAP technologies. The application is a Material Procurement system built with SAP UI5/OpenUI5 framework, designed to demonstrate enterprise-level development skills and understanding of SAP business processes.
 
+## Anggota Kelompok
+
+- **Yohanes Adrian Emmanuel** - 00000092259 (Ketua Kelompok)
+- **Gabriel Valerio** - 00000094207
+- **Justine Donovan** - 00000063202
+- **Axel Lionel Raphael** - 00000092899
+- **Jodianto** - 00000095327
+
+**Kelas:** ERP Programming / IS 539 / LAB
+
 ## Application Description
 
 The **Material Procurement Application** is an enterprise resource planning (ERP) solution that manages and streamlines the procurement process for materials and supplies. This application provides functionality for:
